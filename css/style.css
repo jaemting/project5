@@ -1,0 +1,351 @@
+/*här sätter jag själva grund boxen*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+/*lite grundregler/globala*/
+body {
+	font-family: 'Arvo';
+    font-size: 22px;
+	line-height: 1.4;
+	background-color: white;
+	color: black;
+    margin: 0px;
+	}
+.logo {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: lightgray;
+    text-align: center;
+    margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+ul li {
+  float: left;
+  border-right: 5px solid white;
+  text-align: center;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0px;
+  
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+
+
+
+/*här sätter jag min första klass, behövde lite marginaler*/
+.about-us {
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+/*samma här, behövde marginal under ribriken*/
+.about-us h1 {
+	margin-bottom: 3rem;
+}
+
+/*här har jag en klass om inte visas i mobil. har gett den regler fr att kunna visa dem senare.*/
+.general-information {
+	display: none;
+	background-color: #007BFF;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 1.4;
+	font-weight: normal;
+	padding: 2rem;
+	margin: 2rem;
+	margin-top: 0;
+
+}
+
+/*här har jag gett regler för ytterliggare en klass*/
+.specific-information {
+	background-color: #99ccff;
+
+	padding: 0.5rem;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	line-height: 2;
+}
+
+/*rubriken i samma klass har fått utseende. */
+.specific-information h2 {
+	color: blue;
+	line-height: 2;
+}
+
+/*satte bilderna i ett flexbox system */
+
+.images {
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+/*och definierade hur de skulle se ut */
+.images img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 0.2rem;
+	object-fit: cover;
+	border: none;
+}
+
+/*satte grundregler för hur sidfoten ska se ut */
+
+footer {
+	background-color: #007BFF;
+	color: white;
+	text-align: left;
+	padding: 1rem;
+	line-height: 2;
+
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*min första specifika media query, tablet inom dessa måt får dessa regler. 
+använde mig av dublba css grids eftersom min bilder var inom ytterliggare en DIV tag.*/
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.main {
+		display: grid;
+		margin-top: 0;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header general"
+			"images images"
+			"images images"
+			"specifics blank"
+	}
+
+	/*behövde justera marginalen längst upp*/
+	body {
+		margin-top: 0;
+	}
+
+	/*detta var bängligt. först sätter jag vart i mitt "övre" grid denna klass ska sitta, sen skapade jag ett nytt grid för att placera ut bilderna */
+	.images {
+		grid-area: images;
+		display: grid;
+		grid-template-areas:
+			"image1 image2"
+			"image3 image4";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+
+		/*här sätter jag ut bilderna i mitt undre grid. */
+	}
+
+	#students {
+		grid-area: image1;
+		padding: 1rem;
+		border-radius: 35px;
+	}
+
+	#meeting {
+		grid-area: image2;
+		padding: 1rem;
+		border-radius: 35px;
+	}
+
+	#devices {
+		grid-area: image3;
+		padding: 1rem;
+		border-radius: 35px;
+	}
+
+	#screencode {
+		grid-area: image4;
+		padding: 1rem;
+		border-radius: 35px;
+	}
+
+	/*nya reglar för denna klass*/
+	.about-us {
+		grid-area: header;
+		padding: 2rem;
+		padding-left: 0;
+		margin: 2rem;
+		margin-left: 0;
+
+	}
+
+	/*nya reglar för denna klass*/
+	.general-information {
+		grid-area: general;
+		display: block;
+		background-color: #007BFF;
+		color: white;
+		padding: 2rem;
+		margin: 2rem;
+		margin-top: 0;
+
+		border-bottom-left-radius: 70px;
+		line-height: 2;
+	}
+
+	/*nya reglar för denna klass*/
+	.specific-information {
+		grid-area: specifics;
+		padding: 2rem;
+		margin: 2rem;
+		margin-left: 0;
+		width: 80%;
+
+	}
+}
+
+/*denna media query fångar upp alla med högre upplösning en den angiva. 
+Därmed har vi regler för alla även om inte mobilen är angiven specifikt.*/
+
+@media (min-width: 1024px) {
+	.main {
+		display: grid;
+		margin: 0;
+		padding: 0;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header general"
+			"images images"
+			"specifics specifics"
+
+	}
+
+	/*behlövde återigen justera marginalerna*/
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	/*samma här, grid i en grid.*/
+	.images {
+		grid-area: images;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+		width: 100%;
+	}
+
+	/*här sätter jag reglerna för mina bilder */
+	.images img {
+		width: 50%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 35px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*nya reglar för denna klass*/
+	.about-us {
+		grid-area: header;
+		padding: 3rem;
+		margin: 2rem;
+		margin-top: 5rem;
+		margin-left: 0;
+	}
+
+	.about-us h1 {
+		margin-bottom: 1rem;
+		letter-spacing: -2px;
+
+	}
+
+	/*nya reglar för denna klass*/
+	.general-information {
+		grid-area: general;
+		display: block;
+		background-color: #007BFF;
+		color: #ffffff;
+		text-decoration: none;
+		line-height: 1.4;
+		font-size: 1em;
+		font-weight: lighter;
+		font-style: normal;
+		padding: 2rem 2rem 2rem 5rem;
+		margin: 0rem;
+        margin-bottom: 2rem;
+		
+		border-bottom-left-radius: 70px;
+
+	}
+
+	/*nya regler för denna klass med rubrik och lista*/
+	.general-information li {
+		font-size: 1em;
+		line-height: 1.4;
+		list-style: none;
+		margin: 0.5rem 0;
+		font-weight: lighter;
+		font-style: normal;
+		padding: 1%;
+	}
+
+	.general-information h2 {
+		color: #ffffff;
+		text-decoration: none;
+		margin-bottom: 5%;
+		line-height: 1.4;
+		font-size: 1em;
+		font-weight: lighter;
+		font-style: normal;
+		padding: 1%;
+	}
+
+	/*nya regler för denna klass med rubrik och lista*/
+	.specific-information {
+		grid-area: specifics;
+		padding: 4rem;
+		margin: 2rem;
+		margin-left: 0;
+		margin-right: 25rem;
+	}
+
+	.specific-information li {
+		margin: 0.5rem 0;
+		padding: 0%;
+		font-size: 0.9em;
+		line-height: 1.4;
+		list-style: none;
+		margin: ;
+		font-weight: lighter;
+	}
+
+
+}
