@@ -21,6 +21,7 @@ body {
     background-color: lightgray;
     text-align: center;
     margin: 5px;
+    width: auto;
 }
 
 ul {
@@ -39,6 +40,7 @@ ul li {
   float: left;
   border-right: 5px solid white;
   text-align: center;
+  width: 25%;
 }
 
 ul li:last-child {
@@ -49,93 +51,55 @@ ul li:last-child {
 ul li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   margin: 0px;
   
 }
-
-ul li a:hover {
-  background-color: #111111;
+ul li a:visited {
+color: black;
+  
+}
+ul li a:active {
+color: black;
+background-color: darkgrey;
+  
+}
+.subheader {
+    font-size: 1.6em;
+    margin: 5px;
+    padding: 30px;
+    text-align: left;
 }
 
-
-
-
-/*här sätter jag min första klass, behövde lite marginaler*/
-.about-us {
-	margin-top: 5rem;
-	margin-bottom: 1rem;
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgray;
 }
 
-/*samma här, behövde marginal under ribriken*/
-.about-us h1 {
-	margin-bottom: 3rem;
+article h2{
+    padding-bottom: 10px;
+}
+article p{
+    text-align: right;
 }
 
-/*här har jag en klass om inte visas i mobil. har gett den regler fr att kunna visa dem senare.*/
-.general-information {
-	display: none;
-	background-color: #007BFF;
-	color: #ffffff;
-	text-decoration: none;
-	line-height: 1.4;
-	font-weight: normal;
-	padding: 2rem;
-	margin: 2rem;
-	margin-top: 0;
-
-}
-
-/*här har jag gett regler för ytterliggare en klass*/
-.specific-information {
-	background-color: #99ccff;
-
-	padding: 0.5rem;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	line-height: 2;
-}
-
-/*rubriken i samma klass har fått utseende. */
-.specific-information h2 {
-	color: blue;
-	line-height: 2;
-}
-
-/*satte bilderna i ett flexbox system */
-
-.images {
-	display: flex;
-	flex-direction: column;
-
-
-}
-
-/*och definierade hur de skulle se ut */
-.images img {
-	width: 100%;
-	height: auto;
-	padding-bottom: 0.2rem;
-	object-fit: cover;
-	border: none;
-}
 
 /*satte grundregler för hur sidfoten ska se ut */
 
 footer {
-	background-color: #007BFF;
-	color: white;
-	text-align: left;
-	padding: 1rem;
+	background-color: lightgray;
+    margin: 5px;
+    text-align: center;
+	padding: 10px;
 	line-height: 2;
+    font-size: 0.5em;
+     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-footer a {
-	text-decoration: none;
-	color: #ffffff;
-}
+
 
 /*min första specifika media query, tablet inom dessa måt får dessa regler. 
 använde mig av dublba css grids eftersom min bilder var inom ytterliggare en DIV tag.*/
