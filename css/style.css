@@ -72,17 +72,94 @@ background-color: darkgrey;
     text-align: left;
 }
 
-article {
+.article {
     margin: 5px;
     padding: 10px;
     background-color: lightgray;
+
+}
+.article a {
+    text-decoration: none;
+    color: black;
 }
 
-article h2{
+.article a:visited {
+    text-decoration: none;
+    color: black;
+}
+.article h2{
     padding-bottom: 10px;
 }
-article p{
+.article p{
     text-align: right;
+}
+.blog {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgray;
+
+}
+.blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog a:visited {
+    text-decoration: none;
+    color: black;
+}
+.blog h2{
+    padding-bottom: 10px;
+}
+.blog p{
+    text-align: right;
+}
+
+.divshop {
+    display: grid;
+    border: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: auto;
+    padding: 0;
+    margin: 5px;
+}
+.shop {
+    display: grid;
+    border: none;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    width: auto;
+    padding: 5px;
+    background-color: lightgray;
+    
+}
+.shop img{
+    grid-column: 1/ span 3;
+    width: 100%;
+}
+
+
+.shop a {
+    text-decoration: none;
+    color: black;
+    grid-column: 1/ span 3;
+}
+}
+
+.shop a:visited {
+    text-decoration: none;
+    color: black;
+}
+.shop h2{
+    padding-bottom: 10px;
+}
+.price{
+    text-align: right;
+}
+
+.item {
+    text-align: left;
 }
 
 
@@ -169,30 +246,8 @@ använde mig av dublba css grids eftersom min bilder var inom ytterliggare en DI
 
 	}
 
-	/*nya reglar för denna klass*/
-	.general-information {
-		grid-area: general;
-		display: block;
-		background-color: #007BFF;
-		color: white;
-		padding: 2rem;
-		margin: 2rem;
-		margin-top: 0;
 
-		border-bottom-left-radius: 70px;
-		line-height: 2;
-	}
 
-	/*nya reglar för denna klass*/
-	.specific-information {
-		grid-area: specifics;
-		padding: 2rem;
-		margin: 2rem;
-		margin-left: 0;
-		width: 80%;
-
-	}
-}
 
 /*denna media query fångar upp alla med högre upplösning en den angiva. 
 Därmed har vi regler för alla även om inte mobilen är angiven specifikt.*/
