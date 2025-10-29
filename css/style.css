@@ -1,6 +1,7 @@
 /*här sätter jag själva grund boxen*/
 * {
 	box-sizing: border-box;
+    border-radius: 5px;
 	margin: 0;
 	padding: 0;
 
@@ -69,6 +70,7 @@ ul li:last-child {
 
 ul li a {
   display: block;
+  color: black;
   text-align: center;
   padding: 14px 14px;
   text-decoration: none;
@@ -266,99 +268,86 @@ footer {
 }
 
 
-
-/*min första specifika media query, tablet inom dessa måt får dessa regler. 
-använde mig av dublba css grids eftersom min bilder var inom ytterliggare en DIV tag.*/
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-	.main {
-		display: grid;
-		margin-top: 0;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"header general"
-			"images images"
-			"images images"
-			"specifics blank"
-	}
-
-	/*behövde justera marginalen längst upp*/
-	body {
-		margin-top: 0;
-	}
-
-	/*detta var bängligt. först sätter jag vart i mitt "övre" grid denna klass ska sitta, sen skapade jag ett nytt grid för att placera ut bilderna */
-	.images {
-		grid-area: images;
-		display: grid;
-		grid-template-areas:
-			"image1 image2"
-			"image3 image4";
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
-
-		/*här sätter jag ut bilderna i mitt undre grid. */
-	}
-
-	#students {
-		grid-area: image1;
-		padding: 1rem;
-		border-radius: 35px;
-	}
-
-	#meeting {
-		grid-area: image2;
-		padding: 1rem;
-		border-radius: 35px;
-	}
-
-	#devices {
-		grid-area: image3;
-		padding: 1rem;
-		border-radius: 35px;
-	}
-
-	#screencode {
-		grid-area: image4;
-		padding: 1rem;
-		border-radius: 35px;
-	}
-
-	/*nya reglar för denna klass*/
-	.about-us {
-		grid-area: header;
-		padding: 2rem;
-		padding-left: 0;
-		margin: 2rem;
-		margin-left: 0;
-
-	}
-
-
-
-
-/*denna media query fångar upp alla med högre upplösning en den angiva. 
-Därmed har vi regler för alla även om inte mobilen är angiven specifikt.*/
-
-@media (min-width: 1024px) {
-	.main {
-		display: grid;
+@media (min-width: 800px) {
+    	body {
 		margin: 0;
-		padding: 0;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"header general"
-			"images images"
-			"specifics specifics"
-
+		background-color: white;
 	}
+    header{
+        margin: 0 auto;
+        padding: 0 5px;
+        max-width: 1000px;
+        
+    }
+    header h1 {
+        font-size: 70px;
+    }
+    main {
+        margin: 0 auto;
+        padding: 0 5px;
+        max-width: 1000px;
+        
+    }
+    footer{
+        margin: 0 auto;
+        padding: 0 5px;
+        max-width: 1000px;
+    }
+   nav {
+    display: flex;
+    justify-content: flex-end;
+   }
+ul {
+    width: 80%;
+    justify-content: flex-end;
+    
+}
+ul li {
+  float: right;
+  display: block;
+  border-right: 5px solid white;
+  text-align: center;
+  width: 25%;
+  font-family: 'Arvo';
+}
 
-	/*behlövde återigen justera marginalerna*/
-	body {
-		margin: 0;
-		padding: 0;
-	}
+ul li a:hover:not(.highligt)
+{
+    background-color: darkgray;
+}
+ul li a.highligt{
+    background-color: rgb(146, 158, 158);
+}
+ul li a:active{
+    background-color: rgb(146, 158, 158);
+}
+.subheader{
+    display: none;
+}
+	.startmain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+		
+		margin: 0 auto;
+        padding: 0 5px;
+        max-width: 1000px;
+	  		}
+
+.article {
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgray;
+}            
+    h2 {
+ 
+    font-family: 'Arvo';
+    text-transform: lowercase;
+    font-size: 22px;
+    padding: 20px;
+	line-height: 1.4;
+	color: black;
+    margin: 0px;
+
 
 	/*samma här, grid i en grid.*/
 	.images {
