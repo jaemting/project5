@@ -1,57 +1,54 @@
 /*här sätter jag själva grund boxen*/
 * {
-	box-sizing: border-box;
-    border-radius: 5px;
-	margin: 5px;
-	padding: 0;
-
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0;
 }
 
 /*lite grundregler/globala*/
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    text-transform: lowercase;
-    font-size: 15px;
-	line-height: 1.4;
-	background-color: white;
-	color: black;
-    margin: 0px;
-	}
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  font-size: 15px;
+  line-height: 1.4;
+  background-color: white;
+  color: black;
+  margin: 0px;
+}
 h1 {
-	font-family: 'Arvo';
-    text-transform: lowercase;
-    font-size: 40px;
-	line-height: 1.4;
-	background-color: white;
-	color: black;
-    margin: 0;
-    
-	}
+  font-family: "Arvo";
+  text-transform: lowercase;
+  font-size: 40px;
+  line-height: 1.4;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
 h2 {
-    font-family: 'Arvo';
-    text-transform: lowercase;
-    font-size: 22px;
-	line-height: 1.4;
-	color: black;
-   
+  font-family: "Arvo";
+  text-transform: lowercase;
+  font-size: 22px;
+  line-height: 1.4;
+  color: black;
 }
 .logo {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: lightgray;
-    text-align: center;
-    width: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: lightgray;
+  text-align: center;
+  width: auto;
 }
 nav {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
-    margin: 0;
-    margin-top: 5px;
+  margin: 0;
+  margin-top: 5px;
   padding: 0;
   overflow: hidden;
-   display: flex;
+  display: flex;
   justify-content: center;
   gap: 5px;
   width: auto;
@@ -59,15 +56,12 @@ ul {
 ul li {
   float: left;
   margin: 0;
-  border: 0px ;
+  border: 0px;
   background-color: lightgray;
   text-align: center;
   width: 25%;
-  font-family: 'Arvo';
+  font-family: "Arvo";
 }
-
-
-
 
 ul li a {
   display: block;
@@ -76,334 +70,306 @@ ul li a {
   padding: 14px 14px;
   text-decoration: none;
   margin: 0px;
-  
 }
 ul li a:visited {
-color: black;
-  
+  color: black;
 }
 ul li a:active {
-color: black;
-background-color: darkgrey;
-  
+  color: black;
+  background-color: darkgrey;
 }
 main {
-    margin: 0;
-    border: 0;
+  margin: 0;
+  border: 0;
 }
 .subheader {
-    font-family: 'Arvo';
-    text-transform: lowercase;
-    font-size: 30px;
-	line-height: 1.4;
-	color: black;
-    margin: 0px;
-    margin: 5px;
-    padding: 30px;
-    text-align: left;
+  font-family: "Arvo";
+  text-transform: lowercase;
+  font-size: 30px;
+  line-height: 1.4;
+  color: black;
+  margin: 0px;
+  margin: 5px;
+  padding: 30px;
+  text-align: left;
 }
 .divright {
-    margin: 0;
+  margin: 0;
 }
 .article {
-    margin: 0px;
-    padding: 10px;
-    border: 0;
-    background-color: lightgray;
-
+  margin: 0px;
+  padding: 10px;
+  border: 0;
+  background-color: lightgray;
 }
 .article a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .article a:visited {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.article p{
-    text-align: right;
+.article p {
+  text-align: right;
 }
-.about{
-    display: none;
-    margin: 0;
+.about {
+  display: none;
+  margin: 0;
 }
 .blogintro {
-    display: none;
+  display: none;
 }
-.concertstext{
-    display: none;
+.concertstext {
+  display: none;
 }
 .blog {
-    margin: 5px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: lightgray;
-    font-size: 1em;
-    text-align: left;
-
-
+  margin: 5px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: lightgray;
+  font-size: 1em;
+  text-align: left;
 }
 
-
-    
 .blog img {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
-        float: left;
-    margin: 0 1rem 1rem 0;
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+  float: left;
+  margin: 0 1rem 1rem 0;
 }
 .blog a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .blog a:visited {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-.blog h2{
-    padding-bottom: 10px;
+.blog h2 {
+  padding-bottom: 10px;
 }
-
 
 .divshop {
-    display: grid;
-    border: none;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    width: auto;
-    padding: 0;
-    margin: 5px;
+  display: grid;
+  border: none;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: auto;
+  padding: 0;
+  margin: 5px;
 }
 .shop {
-    display: grid;
-    border: 1px solid darkgray;
-    border-radius: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0px;
-    width: auto;
-    padding: 0%;
-    background-color: lightgray;
-    
+  display: grid;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px;
+  width: auto;
+  padding: 0%;
+  background-color: lightgray;
 }
-.shop img{
-    grid-column: 1/ span 3;
-    border-top-left-radius:  10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.shop img {
+  grid-column: 1 / span 3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
 
 .shop a {
-    text-decoration: underline;
-    color: black;
-    grid-column: 1/ span 3;
-    padding-right: 5px;
-    font-size: 0.7em;
-    text-align: right;
+  text-decoration: underline;
+  color: black;
+  grid-column: 1 / span 3;
+  padding-right: 5px;
+  font-size: 0.7em;
+  text-align: right;
 }
-
 
 .shop a:visited {
-    text-decoration: underline;
-    color: black;
+  text-decoration: underline;
+  color: black;
 }
-.shop h2{
-    padding-bottom: 10px;
+.shop h2 {
+  padding-bottom: 10px;
 }
-.price{
-    text-align: right;
-    color: rgb(85, 84, 84);
-    padding-right: 2px;
-    padding-bottom: 2px;
+.price {
+  text-align: right;
+  color: rgb(85, 84, 84);
+  padding-right: 2px;
+  padding-bottom: 2px;
 }
-
 
 .item {
-    font-family: 'Arvo';
-    text-align: left;
-    font-size: 0.8em;
-    padding-left: 2px;
+  font-family: "Arvo";
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 2px;
 }
 
 .concert {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: lightgray;
-    padding: 10px;
-    margin: 0px;
-    margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
-.concert-location{
-    font-family: 'Arvo';
-    font-size: 1.5em;
-    text-align: left;
+.concert-location {
+  font-family: "Arvo";
+  font-size: 1.5em;
+  text-align: left;
 }
 .concert-date {
-    font-size: 1em;
-    text-align: right;
-    padding-top: 5px;
+  font-size: 1em;
+  text-align: right;
+  padding-top: 5px;
 }
 .concert-venue {
-    grid-column: 1/ span 2;
-    font-family: 'Arvo';
-    font-size: 2em;
+  grid-column: 1 / span 2;
+  font-family: "Arvo";
+  font-size: 2em;
 }
 .concert-phone {
-    font-size: 1em;
+  font-size: 1em;
 }
-.concert-website{
-    text-align: right;
-    font-size: 1em;
+.concert-website {
+  text-align: right;
+  font-size: 1em;
 }
 
 .concert-website a {
-    text-decoration: underline;
-    color: black;
-
-    
+  text-decoration: underline;
+  color: black;
 }
-.concert-list{
-    margin: 0;
+.concert-list {
+  margin: 0;
 }
 
 .concert-website a:visited {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 footer {
-	background-color: lightgray;
-    margin: 0px;
-    text-align: center;
-	
-	line-height: 2;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+  margin: 0px;
+  text-align: center;
 
+  line-height: 2;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
 @media (min-width: 600px) {
-    	body {
-		margin: 0;
-		background-color: white;
-	}
-    header{
-        margin: 0 auto;
-        padding: 0 ;
-        max-width: 1000px;
-        
-    }
-    header h1 {
-        font-size: 70px;
-    }
-    main {
-        margin: 0 auto;
-        padding: 0;
-        max-width: 1000px;
-        
-    }
-    footer{
-        margin: 10px auto;
-        padding: 10px;
-        max-width: 1000px;
-    }
-   nav {
+  body {
+    margin: 0;
+    background-color: white;
+  }
+  header {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+  }
+  header h1 {
+    font-size: 70px;
+  }
+  main {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+  }
+  footer {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 1000px;
+  }
+  nav {
     display: flex;
     justify-content: flex-end;
-   }
-ul {
+  }
+  ul {
     width: 80%;
     justify-content: flex-end;
     gap: 5px;
-    
-}
-ul li {
-  float: right;
-  display: block;
-  
-  text-align: center;
-  width: 25%;
-  font-family: 'Arvo';
-}
+  }
+  ul li {
+    float: right;
+    display: block;
 
-ul li a:hover:not(.highligt)
-{
+    text-align: center;
+    width: 25%;
+    font-family: "Arvo";
+  }
+
+  ul li a:hover:not(.highligt) {
     background-color: darkgray;
-}
-ul li a.highligt{
+  }
+  ul li a.highligt {
     background-color: rgb(146, 158, 158);
-}
-ul li a:active{
+  }
+  ul li a:active {
     background-color: rgb(146, 158, 158);
-}
-.subheader{
+  }
+  .subheader {
     display: none;
-}
-	.startmain {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-		gap: 5px;
-        margin: 0 auto;
-        margin-top: 5px;
-        padding: 0;
-        max-width: 1000px;
-	  		}
+  }
+  .startmain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 0;
+    max-width: 1000px;
+  }
 
-.article {
+  .article {
     display: block;
     padding: 10px;
     margin: 0px;
     padding-top: 50px;
     background-color: lightgray;
     margin: 0;
-}       
+  }
 
-.article p{
+  .article p {
     padding-top: 40px;
     margin: 0;
-}     
-    h2 {
- 
-    font-family: 'Arvo';
+  }
+  h2 {
+    font-family: "Arvo";
     text-transform: lowercase;
     font-size: 30px;
     padding: 30px;
-	margin: 0px;
-    }
-    .about{
-        display: block ;
-        background-color: rgb(235, 235, 235);
-        padding: 10px;
-        padding-top: 70px;
-        margin: 0px;
-    }
-    .about p{
-        text-align: end;
-        padding-top: 25px;
-    }
+    margin: 0px;
+  }
+  .about {
+    display: block;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    padding-top: 70px;
+    margin: 0px;
+  }
+  .about p {
+    text-align: end;
+    padding-top: 25px;
+  }
 
-.divright {
+  .divright {
     margin: 0 auto;
     margin-top: 5px;
     padding: 0;
     max-width: 1000px;
-   
- 
-    
-    
-}
+  }
 
-
-.blogpage{
-    
-   margin-right: 0px;
+  .blogpage {
+    margin-right: 0px;
     margin-left: auto;
     padding: 0 5px;
     max-width: 85%;
@@ -411,26 +377,23 @@ ul li a:active{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-
-    
-}
-.blogintro{
+  }
+  .blogintro {
     display: block;
-     font-family: 'Arvo';
+    font-family: "Arvo";
     text-transform: lowercase;
     font-size: 30px;
     padding: 30px;
-
-}
-.blog{
+  }
+  .blog {
     width: 70%;
-    
+
     margin-right: 0;
     margin-left: auto;
     background-color: white;
-}
+  }
 
-.divshop {
+  .divshop {
     display: grid;
     border: none;
     grid-template-columns: repeat(3, 1fr);
@@ -439,8 +402,8 @@ ul li a:active{
     padding: 0;
     margin: 0;
     margin-top: 5px;
-}
-.shop {
+  }
+  .shop {
     display: grid;
     border: none;
     grid-template-columns: repeat(2, 1fr);
@@ -448,79 +411,70 @@ ul li a:active{
     width: auto;
     padding: 0%;
     background-color: lightgray;
-    
-}
-.shop img{
-    grid-column: 1/ span 3;
-    border-top-left-radius:  5px;
+  }
+  .shop img {
+    grid-column: 1 / span 3;
+    border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
     padding: 0;
     margin: 0;
-}
+  }
 
-
-.shop a {
+  .shop a {
     text-decoration: underline;
     color: black;
-    grid-column: 1/ span 3;
+    grid-column: 1 / span 3;
     padding: 5px;
     padding-right: 10px;
     font-size: 1em;
     text-align: right;
-}
+  }
 
-
-.shop a:visited {
+  .shop a:visited {
     text-decoration: underline;
     color: black;
-}
+  }
 
-.price{
+  .price {
     text-align: right;
     color: black;
     padding: 5px;
     padding-right: 10px;
-}
+  }
 
-
-.item {
-    font-family: 'Arvo';
+  .item {
+    font-family: "Arvo";
     text-align: left;
     font-size: 1.6em;
     padding: 5px;
     padding-left: 10px;
-}
-.concertsmain{
+  }
+  .concertsmain {
     margin: 5px auto;
 
     padding: 0;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 30% 1fr;
-
-}
-.concertstext{
+  }
+  .concertstext {
     display: block;
     position: sticky;
     top: 0;
-    font-family: 'Arvo';
+    font-family: "Arvo";
     text-transform: lowercase;
     font-size: 40px;
     padding: 30px;
     padding-top: 70px;
     margin: 0;
-
-}
-.concert-list {
+  }
+  .concert-list {
     margin: 0;
     padding: 0;
-}
-.concert{
+  }
+  .concert {
     margin: 0;
-      margin-bottom: 5px;
-  
-}
-
-
+    margin-bottom: 5px;
+  }
 }
