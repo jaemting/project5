@@ -32,6 +32,8 @@ h2 {
   line-height: 1.4;
   color: black;
 }
+
+/*här sätter jag regler för hur logan ska se ut, även om den är i text*/
 .logo {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -39,6 +41,8 @@ h2 {
   text-align: center;
   width: auto;
 }
+
+/*här definierar jag mina menyer*/
 nav {
   margin: 0;
 }
@@ -78,6 +82,8 @@ ul li a:active {
   color: black;
   background-color: darkgrey;
 }
+
+/*nu börjar utseendet på huvidsidan avklaras*/
 main {
   margin: 0;
   border: 0;
@@ -93,6 +99,7 @@ main {
   padding: 30px;
   text-align: left;
 }
+/*för att kunna förskuta innehållet skapar jag en placeholder, och här beslutar jag hur det ska sitta ihop. detta är för bloggen*/
 .divright {
   margin: 0;
 }
@@ -122,6 +129,7 @@ main {
 .blogintro {
   display: none;
 }
+
 .concertstext {
   display: none;
 }
@@ -153,7 +161,7 @@ main {
 .blog h2 {
   padding-bottom: 10px;
 }
-
+/*här börjar jag koda specifikt för shoppen*/
 .divshop {
   display: grid;
   border: none;
@@ -211,7 +219,7 @@ main {
   font-size: 0.8em;
   padding-left: 2px;
 }
-
+/*här börjar jag koda specifikt för konsertsidan */
 .concert {
   display: grid;
   grid-template-columns: auto auto;
@@ -265,6 +273,7 @@ footer {
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
+/*här börjar jag koda specifikt för desktop*/
 
 @media (min-width: 600px) {
   body {
@@ -284,11 +293,14 @@ footer {
     padding: 0;
     max-width: 1000px;
   }
+  /*sid foten får ett nytt utseende*/
   footer {
     margin: 10px auto;
     padding: 10px;
     max-width: 1000px;
   }
+
+    /*navigationen anpassas den med*/
   nav {
     display: flex;
     justify-content: flex-end;
@@ -319,6 +331,7 @@ footer {
   .subheader {
     display: none;
   }
+    /*startsidan får här grid system istället för flexbox. */
   .startmain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -360,6 +373,7 @@ footer {
     text-align: end;
     padding-top: 25px;
   }
+/*blogg sidan anpassas den med. här får vå två förskutningar*/
 
   .divright {
     margin: 0 auto;
@@ -378,6 +392,7 @@ footer {
     justify-content: flex-end;
     flex-direction: column;
   }
+  /*ett tidigar dolt textblock plockas fram*/
   .blogintro {
     display: block;
     font-family: "Arvo";
@@ -392,7 +407,7 @@ footer {
     margin-left: auto;
     background-color: white;
   }
-
+/*shoppan anpassas även den med, den får tre kolumner stället för två. */
   .divshop {
     display: grid;
     border: none;
@@ -450,6 +465,8 @@ footer {
     padding: 5px;
     padding-left: 10px;
   }
+
+  /*konsertsidan den får ochså den anpassningar samt att dolda textfelt plockas fram*/
   .concertsmain {
     margin: 5px auto;
 
