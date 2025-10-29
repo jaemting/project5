@@ -16,6 +16,7 @@ body {
   color: black;
   margin: 0px;
 }
+
 h1 {
   font-family: "Arvo";
   text-transform: lowercase;
@@ -104,7 +105,7 @@ main {
   margin: 0;
 }
 .article {
-  margin: 0px;
+  margin: 5px;
   padding: 10px;
   border: 0;
   background-color: lightgray;
@@ -225,7 +226,7 @@ main {
   grid-template-columns: auto auto;
   background-color: lightgray;
   padding: 10px;
-  margin: 0px;
+  margin: 5px;
   margin-bottom: 5px;
 }
 
@@ -266,7 +267,7 @@ main {
 }
 footer {
   background-color: lightgray;
-  margin: 0px;
+  margin: 5px;
   text-align: center;
 
   line-height: 2;
@@ -469,7 +470,7 @@ footer {
   /*konsertsidan den får ochså den anpassningar samt att dolda textfelt plockas fram*/
   .concertsmain {
     margin: 5px auto;
-
+    margin-bottom: 0px;
     padding: 0;
     max-width: 1000px;
     display: grid;
@@ -493,5 +494,8 @@ footer {
   .concert {
     margin: 0;
     margin-bottom: 5px;
+  }
+  .concert:last-child{
+    margin-bottom: 0;
   }
 }
