@@ -53,24 +53,20 @@ ul {
   overflow: hidden;
    display: flex;
   justify-content: center;
+  gap: 5px;
   width: auto;
 }
 ul li {
   float: left;
   margin: 0;
-  margin-right: 5px;
-  border-right: 0px solid white;
+  border: 0px ;
   background-color: lightgray;
   text-align: center;
   width: 25%;
   font-family: 'Arvo';
 }
 
-ul li:last-child {
-    margin-right: 0;
-    border: 0;
-  
-}
+
 
 
 ul li a {
@@ -125,14 +121,13 @@ main {
     text-decoration: none;
     color: black;
 }
-.article h2{
-    padding-bottom: 10px;
-}
+
 .article p{
     text-align: right;
 }
 .about{
     display: none;
+    margin: 0;
 }
 .blogintro {
     display: none;
@@ -241,7 +236,8 @@ main {
     grid-template-columns: auto auto;
     background-color: lightgray;
     padding: 10px;
-    margin: 5px;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .concert-location{
@@ -283,7 +279,7 @@ main {
 }
 footer {
 	background-color: lightgray;
-    margin: 5px;
+    margin: 0px;
     text-align: center;
 	
 	line-height: 2;
@@ -293,7 +289,7 @@ footer {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     	body {
 		margin: 0;
 		background-color: white;
@@ -325,12 +321,13 @@ footer {
 ul {
     width: 80%;
     justify-content: flex-end;
+    gap: 5px;
     
 }
 ul li {
   float: right;
   display: block;
-  border-right: 5px solid white;
+  
   text-align: center;
   width: 25%;
   font-family: 'Arvo';
@@ -360,14 +357,17 @@ ul li a:active{
 	  		}
 
 .article {
+    display: block;
     padding: 10px;
     margin: 0px;
     padding-top: 50px;
     background-color: lightgray;
+    margin: 0;
 }       
 
 .article p{
     padding-top: 40px;
+    margin: 0;
 }     
     h2 {
  
@@ -375,21 +375,18 @@ ul li a:active{
     text-transform: lowercase;
     font-size: 30px;
     padding: 30px;
-	line-height: 1.4;
-	color: black;
-    margin: 0px;
+	margin: 0px;
     }
     .about{
         display: block ;
         background-color: rgb(235, 235, 235);
         padding: 10px;
-        padding-top: 50px;
+        padding-top: 70px;
         margin: 0px;
     }
     .about p{
         text-align: end;
-        padding: 30px;
-        padding-top: 40px;
+        padding-top: 25px;
     }
 
 .divright {
@@ -495,7 +492,8 @@ ul li a:active{
     padding-left: 10px;
 }
 .concertsmain{
-    margin: 0 auto;
+    margin: 5px auto;
+
     padding: 0;
     max-width: 1000px;
     display: grid;
@@ -504,6 +502,8 @@ ul li a:active{
 }
 .concertstext{
     display: block;
+    position: sticky;
+    top: 0;
     font-family: 'Arvo';
     text-transform: lowercase;
     font-size: 40px;
@@ -518,7 +518,8 @@ ul li a:active{
 }
 .concert{
     margin: 0;
-    margin-top: 5px;
+      margin-bottom: 5px;
+  
 }
 
 
