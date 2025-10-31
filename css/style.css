@@ -110,15 +110,21 @@ main {
   border: 0;
   background-color: lightgray;
 }
-.article a {
+.article a:link {
   text-decoration: none;
   color: black;
+  
 }
+
 
 .article a:visited {
   text-decoration: none;
   color: black;
 }
+.article a:hover{
+   font-style: oblique ;
+}
+
 
 .article p {
   text-align: right;
@@ -247,6 +253,8 @@ main {
 }
 .concert-phone {
   font-size: 1em;
+  text-decoration: none;
+  color: black;
 }
 .concert-website {
   text-align: right;
@@ -352,6 +360,8 @@ footer {
     margin: 0;
   }
 
+
+
   .article p {
     padding-top: 40px;
     margin: 0;
@@ -454,6 +464,8 @@ footer {
 
   .price {
     text-align: right;
+    font-family: "Arvo";
+    font-size: 1.6em;
     color: black;
     padding: 5px;
     padding-right: 10px;
@@ -468,6 +480,7 @@ footer {
   }
 
   /*konsertsidan den får ochså den anpassningar samt att dolda textfelt plockas fram*/
+
   .concertsmain {
     margin: 5px auto;
     margin-bottom: 0px;
