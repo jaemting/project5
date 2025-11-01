@@ -287,9 +287,9 @@ footer {
   background-color: lightgray;
   margin-top: 5px;
   text-align: center;
-
-  line-height: 2;
-  
+  padding: 10px;
+    
+  }  
  
 }
 /*här börjar jag koda specifikt för desktop*/
