@@ -514,8 +514,6 @@ footer {
   }
   .concertstext {
     display: block;
-    position: sticky;
-    top: 0;
     font-family: "Arvo", sans-serif;
     text-transform: lowercase;
     font-size: 40px;
