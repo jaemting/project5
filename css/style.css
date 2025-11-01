@@ -32,8 +32,12 @@ h2 {
   font-size: 22px;
   line-height: 1.4;
   color: black;
+  padding-bottom: 10px;
 }
 
+h3{
+  padding-bottom: 10px;
+}
 /*här sätter jag regler för hur logan ska se ut, även om den är i text*/
 .logo {
   padding-top: 70px;
@@ -152,9 +156,9 @@ main {
 .blog img {
   width: 40%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   float: left;
-  margin: 0 1rem 1rem 0;
+  margin: 0 10px 10px 0;
 }
 .blog a {
   text-decoration: none;
@@ -165,9 +169,7 @@ main {
   text-decoration: none;
   color: black;
 }
-.blog h2 {
-  padding-bottom: 10px;
-}
+
 /*här börjar jag koda specifikt för shoppen*/
 .divshop {
   display: grid;
@@ -223,7 +225,7 @@ main {
 .item {
   font-family: "Arvo";
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1em;
   padding-left: 2px;
 }
 /*här börjar jag koda specifikt för konsertsidan */
